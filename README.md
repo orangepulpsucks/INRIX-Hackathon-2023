@@ -18,6 +18,8 @@ This repository serves as a boilerplate for a full-stack web application using R
 
 ### Installation Steps
 
+> Be sure to go into `/api` and `/webapp` folders for more instruction and context
+
 1. Clone this repository.
 2. Navigate to the root directory of the project.
 3. Install dependencies for the API:
@@ -40,6 +42,8 @@ For configuring environment variables, follow these steps:
 3. Fill in the necessary environment variables in the newly created `.env` files for both the API and React app.
 
 ## Important Scripts
+
+> This must be ran within their respective folders, so be sure to change directory!
 
 - `/api`:
 
