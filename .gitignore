@@ -233,3 +233,4 @@ $RECYCLE.BIN/
 # Security
 *.env
 .env
+!.template.env
