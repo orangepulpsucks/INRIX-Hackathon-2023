@@ -16,8 +16,13 @@
     "win32:copy:env": "copy ..\\.env .env"
   },
   "dependencies": {
+    "@adobe/react-spectrum": "^3.32.2",
+    "@heroicons/react": "^1.0.6",
+    "mapbox-gl": "^3.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-aria": "^3.30.0",
+    "react-dom": "^18.2.0",
+    "react-stately": "^3.28.0"
   },
   "devDependencies": {
     "@types/node": "^20.10.1",
