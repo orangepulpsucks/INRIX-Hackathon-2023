@@ -4,7 +4,10 @@ import router from "./routes";
 
 const server = express();
 
-server.use(cors());
+server.use(cors({
+    origin: [`${process.env.CLIENT_REACT_HOST}:${process.env.CLIENT_REACT_PORT}`],
+    methods: ["GET", "POST", "PUT", "UPDATE"],
+}));
 // https://medium.com/@adamzerner/how-bodyparser-works-247897a93b90
 server.use(express.json());
 // mount routes
