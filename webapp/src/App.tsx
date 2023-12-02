@@ -4,11 +4,6 @@ import viteLogo from "/vite.svg";
 import tailwindLogo from "/tailwind.svg";
 import "./App.css";
 import Tether from "./components/Tether";
-<<<<<<< HEAD
-import "mapbox-gl/dist/mapbox-gl.css";
-=======
-import Locations from "./components/Locations";
->>>>>>> origin/main
 
 function App() {
   const [count, setCount] = useState(0);
@@ -51,9 +46,6 @@ function App() {
       <p className="text-zinc-500">
         Click on the Vite, React, and Tailwind logos to learn more
       </p>
-      <div>
-        <Locations />
-      </div>
     </>
   );
 }
