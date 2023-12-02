@@ -4,10 +4,11 @@ import viteLogo from "/vite.svg";
 import tailwindLogo from "/tailwind.svg";
 import "./App.css";
 import Tether from "./components/Tether";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  
+
   return (
     <>
       <div className="flex justify-around">
