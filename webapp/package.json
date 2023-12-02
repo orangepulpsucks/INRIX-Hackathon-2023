@@ -4,13 +4,16 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "npm run copy:env && vite",
+    "dev": "run-script-os",
+    "dev:darwin:linux": "npm run unix:copy:env && vite",
+    "dev:win32": "",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format:check": "prettier . --check",
     "format:all": "prettier . --write",
-    "copy:env": "cp ../.env .env"
+    "unix:copy:env": "cp ../.env .env",
+    "win32:copy:env": "copy ../.env .env"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -30,6 +33,7 @@
     "postcss": "^8.4.31",
     "prettier": "^3.1.0",
     "prettier-plugin-tailwindcss": "^0.5.7",
+    "run-script-os": "^1.1.6",
     "tailwindcss": "^3.3.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
