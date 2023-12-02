@@ -13,7 +13,7 @@
     "format:check": "prettier . --check",
     "format:all": "prettier . --write",
     "unix:copy:env": "cp ../.env .env",
-    "win32:copy:env": "copy ../.env .env"
+    "win32:copy:env": "copy ..\\.env .env"
   },
   "dependencies": {
     "react": "^18.2.0",
