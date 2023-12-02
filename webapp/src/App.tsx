@@ -4,10 +4,11 @@ import viteLogo from "/vite.svg";
 import tailwindLogo from "/tailwind.svg";
 import "./App.css";
 import Tether from "./components/Tether";
+import Locations from "./components/Locations";
 
 function App() {
   const [count, setCount] = useState(0);
-  
+
   return (
     <>
       <div className="flex justify-around">
@@ -46,6 +47,9 @@ function App() {
       <p className="text-zinc-500">
         Click on the Vite, React, and Tailwind logos to learn more
       </p>
+      <div>
+        <Locations />
+      </div>
     </>
   );
 }
