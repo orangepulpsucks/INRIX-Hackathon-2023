@@ -7,9 +7,7 @@ import Tether from "./components/Tether";
 
 function App() {
   const [count, setCount] = useState(0);
-
-  // console.log(import.meta.env.CLIENT_NODE_SERVER_PORT);
-
+  
   return (
     <>
       <div className="flex justify-around">
