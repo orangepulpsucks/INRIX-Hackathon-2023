@@ -1,47 +1,68 @@
 function Locations() {
   return (
-    <div>
-      <p>Hello! 👋</p>
-      <h1>Where do you want to go?</h1>
-      <section>
-        <select name="city">
-          <option value="san-francisco">San Francisco</option>
-          <option value="frankfurt" disabled>
-            Frankfurt
-          </option>
-          <option value="seattle" disabled>
-            Seattle
-          </option>
-          <option value="portland" disabled>
-            Portland
-          </option>
-          <option value="new-york" disabled>
-            New York
-          </option>
-          <option value="san-frankfurt" disabled>
-            San Frankfurt
-          </option>
-        </select>
-        <p>To</p>
-        <select name="city">
-          <option value="san-francisco">San Francisco</option>
-          <option value="frankfurt" disabled>
-            Frankfurt
-          </option>
-          <option value="seattle" disabled>
-            Seattle
-          </option>
-          <option value="portland" disabled>
-            Portland
-          </option>
-          <option value="new-york" disabled>
-            New York
-          </option>
-          <option value="san-frankfurt" disabled>
-            San Frankfurt
-          </option>
-        </select>
-      </section>
+    <div className="flex-row justify-end">
+      <p className="my-1 text-left text-xs text-black text-opacity-40">
+        Hello! 👋
+      </p>
+      <h1 className="text-left text-sm font-bold">Where do you want to go?</h1>
+      <div className="flex items-baseline justify-between text-sm">
+        <section className="align-center my-2 flex items-center text-sm">
+          <select
+            className="my-2 mr-2 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+            name="city"
+          >
+            <option value="san-francisco">San Francisco</option>
+            <option value="frankfurt" disabled>
+              Frankfurt
+            </option>
+            <option value="seattle" disabled>
+              Seattle
+            </option>
+            <option value="portland" disabled>
+              Portland
+            </option>
+            <option value="new-york" disabled>
+              New York
+            </option>
+            <option value="san-frankfurt" disabled>
+              San Frankfurt
+            </option>
+          </select>
+          <p>To</p>
+          <select
+            name="city"
+            className="m-2 rounded-lg bg-slate-50 p-2 drop-shadow-md"
+          >
+            <option value="san-francisco" disabled>
+              San Francisco
+            </option>
+            <option value="frankfurt">Frankfurt</option>
+            <option value="seattle" disabled>
+              Seattle
+            </option>
+            <option value="portland" disabled>
+              Portland
+            </option>
+            <option value="new-york" disabled>
+              New York
+            </option>
+            <option value="san-frankfurt" disabled>
+              San Frankfurt
+            </option>
+          </select>
+        </section>
+        <div className=" flex items-center">
+          <label htmlFor="show-route" className="block p-2">
+            Show Route
+          </label>
+          <input
+            className="bg-slate-50"
+            type="checkbox"
+            id="show-route"
+            name="show-route"
+          />
+        </div>
+      </div>
     </div>
   );
 }

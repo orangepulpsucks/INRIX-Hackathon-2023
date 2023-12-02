@@ -4,6 +4,8 @@ import viteLogo from "/vite.svg";
 import tailwindLogo from "/tailwind.svg";
 import "./App.css";
 import Tether from "./components/Tether";
+import "mapbox-gl/dist/mapbox-gl.css";
+import Locations from "./components/Locations";
 
 function App() {
   const [count, setCount] = useState(0);
