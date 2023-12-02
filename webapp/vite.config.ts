@@ -10,8 +10,6 @@ export default defineConfig(({ mode }) => {
 
   const apiURL = `${env.CLIENT_NODE_HOST}:${env.CLIENT_NODE_PORT}`;
 
-  console.log(apiURL);
-
   return {
     plugins: [react()],
     envPrefix: "CLIENT_",
@@ -23,6 +21,14 @@ export default defineConfig(({ mode }) => {
           target: apiURL,
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ""),
+          configure: (proxy, _options) => {
+            proxy.on('error', (err: NodeJS.ErrnoException, req, _res) => {
+              if (err.code === "ECONNREFUSED") {
+                console.log(`\x1b[31mProxy Error: ${err.code}\x1b[0m`); // Log the error code
+                console.log('\x1b[93m\x1b[1mDid you remember to run the API server?\x1b[0m')
+              }
+            })
+          },
         },
       },
     },
