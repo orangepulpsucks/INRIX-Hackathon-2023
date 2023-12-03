@@ -33,7 +33,7 @@ function App() {
           <div className="my-4 border border-slate-200"></div>
 
           <div className="mb-6 mt-4 flex items-baseline justify-between">
-            <h1 className="text-left text-2xl text-base font-semibold">
+            <h1 className="text-left text-2xl font-semibold">
               What's the plan? 👀
             </h1>
             <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">
