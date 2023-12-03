@@ -48,7 +48,7 @@ function WeatherCard() {
 
   return (
     <div
-      className={`inline-block flex h-fit w-1/2 justify-between rounded-lg border border-gray-300 bg-gradient-to-r from-stone-50 first-letter:items-center ${dynWeatherColor}`}
+      className={`flex h-fit justify-between rounded-lg border border-gray-300 bg-gradient-to-r from-stone-50 first-letter:items-center ${dynWeatherColor}`}
     >
       <div className="m-6 flex-row">
         <p className="px-2 text-xl">{tempFaren}°F</p>
