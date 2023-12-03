@@ -52,7 +52,7 @@ function WeatherCard() {
     >
       <div className="m-6 flex-row">
         <p className="px-2 text-xl">{tempFaren}°F</p>
-        <p className="px-2 text-sm">San Francisco, WA</p>
+        <p className="px-2 text-sm">San Francisco, CA</p>
       </div>
       <img src={url} />
     </div>

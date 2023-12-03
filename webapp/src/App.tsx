@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-      <div className="grid min-h-screen grid-cols-2">
-        <div className="px-16 py-14 text-left">
+      <div class="flex h-screen w-screen overflow-hidden">
+        <div className="no-scrollbar w-5/12 overflow-y-auto overflow-y-auto px-16 py-14 text-left">
           <Tether className="mb-5" />
 
           <div>
@@ -35,11 +35,20 @@ function App() {
 
           <div className="my-4 border border-slate-200"></div>
 
-          <h1 className="text-left text-base font-semibold">
+          <h1 className="mb-2 text-left text-base font-semibold">
             What's the plan? 👀
           </h1>
+
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
         </div>
-        <div>
+        <div className="relative w-7/12">
           <Mapbox />
         </div>
       </div>
