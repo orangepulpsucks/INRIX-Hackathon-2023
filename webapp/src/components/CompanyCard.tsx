@@ -20,7 +20,7 @@ function CompanyCard({ id, expanded }: CCProps) {
           aria-expanded={expanded}
           aria-controls={`accordion-collapse-body-${id}`}
         >
-          <p className="px-2">Resturant</p>
+          <p className="px-2">Restaurant</p>
           <div className="flex items-center ">
             <p className="px-4">⭐⭐⭐⭐⭐</p>
             <svg
@@ -49,7 +49,7 @@ function CompanyCard({ id, expanded }: CCProps) {
       >
         <div className="mt-2 rounded-lg border border-gray-200 p-5 dark:border-gray-700 dark:bg-gray-900">
           <div className="flex w-full">
-            <p className="mb-2 w-3/5 text-gray-500 dark:text-gray-400">
+            <p className="mb-2 w-3/5 pr-6  text-gray-500 dark:text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
               orci massa, tempor vel lorem sed, condimentum hendrerit odio. In
               suscipit at ante nec pharetra. Aliquam in elit ipsum. Vivamus
@@ -66,7 +66,9 @@ function CompanyCard({ id, expanded }: CCProps) {
               Add
             </button>
             <p className="text-gray-500 dark:text-gray-400">
-              <a href="https://www.yelp.com/">External Link 🔗</a>
+              <a target="_blank" href="https://www.yelp.com/">
+                External Link 🔗
+              </a>
             </p>
           </div>
         </div>

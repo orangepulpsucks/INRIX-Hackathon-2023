@@ -26,9 +26,11 @@ function App() {
 
           <div className="my-4 border border-slate-200"></div>
 
-          <h1 className="text-left text-base font-semibold">Pick a date 📅</h1>
+          <h1 className="mb-6 mt-4 text-left text-base font-semibold">
+            Pick a date 📅
+          </h1>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between align-top">
             <RangeCalendar />
             <WeatherCard />
           </div>
@@ -41,7 +43,7 @@ function App() {
             </h1>
 
             <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">
-              display on map ->
+              display on map 📌
             </button>
           </div>
 

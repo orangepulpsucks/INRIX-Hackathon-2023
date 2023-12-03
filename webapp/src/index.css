@@ -17,15 +17,8 @@
   }
 }
 
-@font-face {
-  font-family: "Roboto";
-  src:
-    local("Roboto"),
-    url("./assets/fonts/roboto.woff2") format("woff2");
-}
-
 :root {
-  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

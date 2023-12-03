@@ -6,6 +6,9 @@ export default {
       transitionProperty: {
         filter: "filter",
       },
+      fontFamily: {
+        roboto: ["Roboto"],
+      },
     },
   },
   plugins: [],
