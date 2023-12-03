@@ -1,8 +1,8 @@
 function Locations() {
   return (
     <div className="flex-row justify-end">
-      <p className="my-2 text-left text-sm text-slate-400">Hello! 👋</p>
-      <h1 className="mb-2 text-left text-base font-semibold">
+      <p className="my-2 text-left text-3xl text-slate-400 ">Hello! 👋</p>
+      <h1 className="mb-2 text-left text-2xl font-semibold ">
         Where do you want to go? 📍
       </h1>
       <div className="flex items-baseline justify-between text-sm">
@@ -10,7 +10,7 @@ function Locations() {
           <div>
             <button
               type="button"
-              class="inline-flex w-full justify-center gap-x-1.5 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+              className="inline-flex w-full justify-center gap-x-1.5 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
               id="menu-button"
               aria-expanded="true"
               aria-haspopup="true"
