@@ -10,13 +10,14 @@ import Mapbox from "./components/Mapbox";
 import RangeCalendar from "./components/RangeCalendar";
 import WeatherCard from "./components/WeatherCard";
 import CompanyCard from "./components/CompanyCard";
+import fileContent from "./assets/yelpConv.json";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <div class="flex h-screen w-screen overflow-hidden">
+      <div className="flex h-screen w-screen overflow-hidden">
         <div className="no-scrollbar w-5/12 overflow-y-auto overflow-y-auto px-16 py-14 text-left">
           <Tether className="mb-5" />
 
@@ -41,10 +42,22 @@ function App() {
             </h1>
 
             <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">
-              display on map ->
+              display on map -
             </button>
           </div>
 
+          {fileContent.businesses.map((item) => {
+            return (
+              <CompanyCard
+                key={item.id}
+                name={item.name}
+                stars={item.rating}
+                desc="LOREM IPSUM"
+                id={item.id}
+                expanded={true}
+              />
+            );
+          })}
           <CompanyCard id={1} expanded={true} />
           <CompanyCard id={2} expanded={false} />
           <CompanyCard id={3} expanded={false} />
