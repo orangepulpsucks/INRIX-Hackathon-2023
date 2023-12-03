@@ -48,23 +48,20 @@ function App() {
             </button>
           </div>
 
-          {fileContent.businesses.map((item) => {
-            return (
-              <CompanyCard
-                key={item.id}
-                name={item.name}
-                stars={item.rating}
-                desc="LOREM IPSUM"
-                id={item.id}
-                expanded={true}
-              />
-            );
-          })}
-          <CompanyCard id={1} expanded={true} />
-          <CompanyCard id={2} expanded={false} />
-          <CompanyCard id={3} expanded={false} />
-          <CompanyCard id={4} expanded={false} />
-          <CompanyCard id={5} expanded={false} />
+          {fileContent.businesses
+            .map((item) => {
+              return (
+                <CompanyCard
+                  key={item.id}
+                  name={item.name}
+                  stars={item.rating}
+                  desc="LOREM IPSUM"
+                  id={item.id}
+                  expanded={false}
+                />
+              );
+            })
+            .slice(0, 5)}
         </div>
         <div className="relative w-7/12">
           <Mapbox />
