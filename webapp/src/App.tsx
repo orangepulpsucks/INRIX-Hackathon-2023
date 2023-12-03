@@ -7,6 +7,7 @@ import Tether from "./components/Tether";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Locations from "./components/Locations";
 import Mapbox from "./components/Mapbox";
+import RangeCalendar from "./components/RangeCalendar";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,10 @@ function App() {
           </div>
 
           <div class="my-4 border border-slate-200"></div>
+
+          <div>
+            <RangeCalendar />
+          </div>
         </div>
         <div>
           <Mapbox />

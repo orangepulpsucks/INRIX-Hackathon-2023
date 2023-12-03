@@ -23,7 +23,7 @@ export default function RangeCalendar(props) {
   );
 
   return (
-    <div {...calendarProps} ref={ref} className="inline-block text-gray-800">
+    <div {...calendarProps} ref={ref} className="inline-block text-sm">
       <CalendarHeader
         state={state}
         calendarProps={calendarProps}
