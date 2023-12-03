@@ -9,6 +9,7 @@ import Locations from "./components/Locations";
 import Mapbox from "./components/Mapbox";
 import RangeCalendar from "./components/RangeCalendar";
 import WeatherCard from "./components/WeatherCard";
+import CompanyCard from "./components/CompanyCard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,7 +36,7 @@ function App() {
 
           <div className="my-4 border border-slate-200"></div>
 
-          <div className="mb-4 flex items-baseline justify-between">
+          <div className="mb-6 mt-4 flex items-baseline justify-between">
             <h1 className="text-left text-base font-semibold">
               What's the plan? 👀
             </h1>
@@ -45,14 +46,11 @@ function App() {
             </button>
           </div>
 
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
-          <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
+          <CompanyCard />
         </div>
         <div className="relative w-7/12">
           <Mapbox />
