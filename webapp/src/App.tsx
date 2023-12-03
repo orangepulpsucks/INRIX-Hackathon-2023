@@ -19,8 +19,6 @@ function App() {
     <>
       <div className="flex h-screen w-screen overflow-hidden">
         <div className="no-scrollbar w-5/12 overflow-y-auto overflow-y-auto px-16 py-14 text-left">
-          <Tether className="mb-5" />
-
           <div>
             <Locations />
           </div>
