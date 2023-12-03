@@ -29,7 +29,7 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
         >
           <p className="px-2">{name}</p>
           <div className="flex items-center ">
-            <img className="px-2" src={path}></img>
+            <img className="mr-3 px-2" src={path}></img>
             <svg
               data-accordion-icon
               className="mr-2 h-3 w-3 shrink-0 rotate-180"
