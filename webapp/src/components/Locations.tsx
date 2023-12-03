@@ -63,7 +63,7 @@ function Locations() {
             Show Route
           </label>
           <input
-            className="border-red-500"
+            className=""
             type="checkbox"
             id="show-route"
             name="show-route"

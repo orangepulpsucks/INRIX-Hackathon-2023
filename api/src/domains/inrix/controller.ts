@@ -1,24 +1,27 @@
 import generateHash from "../../util/generateHash";
 
 export async function inrixapi() {
-    var requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-      };
-    const response = await fetch("https://api.iq.inrix.com/auth/v1/appToken?appId=rx234ow9q7&hashToken=cngyMzRvdzlxN3w1bXFiR2F0aDF0YVpWVWNoZzdhVlE5bmpEOUlRMXlQM2FlcXNxWTUx")
-        .then(response => response.text())
-        .then(result => { return result })
-        .catch(error => console.log('error', error));
+  var requestOptions = {
+    method: "GET",
+    redirect: "follow",
+  };
 
-    return response;
+  try {
+    const response = await fetch(
+      `https://api.iq.inrix.com/auth/v1/appToken?appId=${process.env.INRIXIQ_APP_ID}&hashToken=${process.env.INRIXIQ_HASH_TOKEN}`,
+    );
+    const body = JSON.parse(await response.text());
+    return body["result"]["token"];
+  } catch (error) {
+    return console.log("error", error);
+  }
 }
 
 export function getMessage() {
-    const helloFrom = {
-      message: `Hello World!`,
-      id: generateHash(),
-    };
-  
-    return helloFrom;
-  }
-  
+  const helloFrom = {
+    message: `Hello World!`,
+    id: generateHash(),
+  };
+
+  return helloFrom;
+}

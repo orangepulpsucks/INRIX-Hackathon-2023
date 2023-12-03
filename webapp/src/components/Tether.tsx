@@ -37,6 +37,11 @@ interface TetherProps {
   className: string | undefined;
 }
 
+interface WeatherCardProps {
+  temp: number;
+  url: string;
+}
+
 export default function Tether({ className }: TetherProps) {
   const [connected, setConnected] = useState<ConnectionStatus>(CONNECTION.DOWN);
 
