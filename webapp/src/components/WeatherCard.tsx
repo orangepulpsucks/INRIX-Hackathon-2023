@@ -23,11 +23,11 @@ function WeatherCard({ temp, url }: WeatherCardProps) {
 
   return (
     <div
-      className={`inline-block flex w-1/2 items-center justify-between rounded-lg bg-gradient-to-r from-stone-50 ${dynWeatherColor}`}
+      className={`inline-block flex h-fit w-1/2 justify-between rounded-lg border border-gray-300 bg-gradient-to-r from-stone-50 first-letter:items-center ${dynWeatherColor}`}
     >
-      <div className="m-2 flex-row">
-        <p className="p-2 text-xl">{temp}°F</p>
-        <p className="p-2 text-sm">Seattle, WA</p>
+      <div className="m-6 flex-row">
+        <p className="px-2 text-xl">{temp}°F</p>
+        <p className="px-2 text-sm">Seattle, WA</p>
       </div>
       <img src={url} />
     </div>

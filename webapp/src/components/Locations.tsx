@@ -2,7 +2,7 @@ function Locations() {
   return (
     <div className="flex-row justify-end">
       <p className="my-2 text-left text-sm text-slate-400">Hello! 👋</p>
-      <h1 className="text-left text-base font-semibold">
+      <h1 className="mb-2 text-left text-base font-semibold">
         Where do you want to go? 📍
       </h1>
       <div className="flex items-baseline justify-between text-sm">
