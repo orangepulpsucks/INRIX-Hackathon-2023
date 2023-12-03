@@ -39,7 +39,7 @@ function App() {
           <div className="my-4 border border-slate-200"></div>
 
           <h1 className="text-left text-base font-semibold">
-            What do you want to see? 👀
+            What's the plan? 👀
           </h1>
         </div>
         <div>
