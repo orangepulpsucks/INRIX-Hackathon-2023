@@ -8,6 +8,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import Locations from "./components/Locations";
 import Mapbox from "./components/Mapbox";
 import RangeCalendar from "./components/RangeCalendar";
+import WeatherCard from "./components/WeatherCard";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,10 +25,14 @@ function App() {
 
           <div className="my-4 border border-slate-200"></div>
 
-          <div>
-            <h1 className="text-left text-base font-semibold">When? 📅</h1>
+          <h1 className="text-left text-base font-semibold">When? 📅</h1>
+
+          <div className="flex justify-between">
             <RangeCalendar />
-            <WeatherCard />
+            <WeatherCard
+              temp="78"
+              url="https://openweathermap.org/img/wn/10d@2x.png"
+            />
           </div>
         </div>
         <div>
