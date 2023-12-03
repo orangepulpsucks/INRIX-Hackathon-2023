@@ -93,3 +93,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.fade-in {
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

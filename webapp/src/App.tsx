@@ -12,7 +12,7 @@ import logo from "./assets/devpostlogo.jpg";
 function App() {
   return (
     <>
-      <div className="flex h-screen w-screen overflow-hidden">
+      <div className="fade-in flex h-screen w-screen overflow-hidden">
         <div className="no-scrollbar w-5/12 overflow-y-auto px-16 py-14 text-left">
           <img src={logo} width={128} height={128} className="mx-auto block" />
           <div>
