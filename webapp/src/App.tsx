@@ -35,9 +35,15 @@ function App() {
 
           <div className="my-4 border border-slate-200"></div>
 
-          <h1 className="mb-2 text-left text-base font-semibold">
-            What's the plan? 👀
-          </h1>
+          <div className="mb-4 flex items-baseline justify-between">
+            <h1 className="text-left text-base font-semibold">
+              What's the plan? 👀
+            </h1>
+
+            <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">
+              + add a location
+            </button>
+          </div>
 
           <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
           <div class="container my-4 h-20 w-full rounded-lg border bg-slate-200"></div>
