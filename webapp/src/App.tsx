@@ -7,21 +7,30 @@ import WeatherCard from "./components/WeatherCard";
 import CompanyCard from "./components/CompanyCard";
 import fileContent from "./assets/poi.json";
 import { GenerateItinerary } from "./components/GenerateItinerary";
-import logo from "./assets/devpostlogo.jpg";
+import logo from "./assets/bat.svg";
 
 function App() {
   return (
     <>
       <div className="fade-in flex h-screen w-screen overflow-hidden">
         <div className="no-scrollbar w-5/12 overflow-y-auto px-16 py-14 text-left">
-          <img src={logo} width={128} height={128} className="mx-auto block" />
+          <img
+            src={logo}
+            width={128}
+            height={128}
+            className="mx-auto mb-8 block"
+          />
           <div>
             <Locations />
           </div>
 
           <div className="my-4 border border-slate-200"></div>
 
+<<<<<<< HEAD
           <h1 className="mb-6 mt-4 text-left text-2xl font-semibold">
+=======
+          <h1 className="mb-6 mt-4 text-left text-base text-xl font-semibold">
+>>>>>>> origin/main
             Pick a date 📅
           </h1>
 
@@ -33,7 +42,11 @@ function App() {
           <div className="my-4 border border-slate-200"></div>
 
           <div className="mb-6 mt-4 flex items-baseline justify-between">
+<<<<<<< HEAD
             <h1 className="text-left text-2xl font-semibold">
+=======
+            <h1 className="text-left text-base text-xl font-semibold">
+>>>>>>> origin/main
               What's the plan? 👀
             </h1>
             <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">

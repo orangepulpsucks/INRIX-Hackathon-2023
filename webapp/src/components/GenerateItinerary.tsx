@@ -27,7 +27,7 @@ export const GenerateItinerary = () => {
     <div>
       <button
         type="button"
-        className="mb-10 mt-5 inline-flex w-full justify-center gap-x-1.5 rounded-lg bg-blue-500 px-4 py-3 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-blue-300 hover:bg-blue-600"
+        className="mb-10 mt-5 inline-flex w-full justify-center gap-x-1.5 rounded-lg bg-sky-200 px-4 py-3 text-sm font-semibold text-white shadow-sm ring-1 ring-inset ring-sky-200 hover:bg-sky-200"
         id="menu-button"
         aria-expanded="true"
         aria-haspopup="true"

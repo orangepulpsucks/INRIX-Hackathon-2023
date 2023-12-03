@@ -50,7 +50,7 @@ function WeatherCard() {
     <div
       className={`flex h-fit justify-between rounded-lg border border-gray-300 bg-gradient-to-r from-stone-50 first-letter:items-center ${dynWeatherColor}`}
     >
-      <div className="m-6 flex-row">
+      <div className="m-6 flex-row text-gray-800">
         <p className="px-2 text-xl">{tempFaren}°F</p>
         <p className="px-2 text-sm">San Francisco, CA</p>
       </div>
