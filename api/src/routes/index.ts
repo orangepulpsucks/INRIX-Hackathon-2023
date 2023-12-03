@@ -1,9 +1,9 @@
 import express from "express";
-import helloWorldHandler from "../domains/hello-world/routes";
+import inrixhandler from "../domains/inrix/routes";
 
 const router = express.Router();
 
 // place your route handlers here
-router.use("/", helloWorldHandler);
+router.use("/", inrixhandler);
 
 export default router;
