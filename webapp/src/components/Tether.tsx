@@ -14,7 +14,7 @@ function getConnectionClass(status: ConnectionStatus): string {
     case CONNECTION.OK:
       return "text-green-400";
     case CONNECTION.ISSUE:
-      return "text-yellow-400";
+      return "text-orange-400";
     case CONNECTION.DOWN:
     default:
       return "text-red-400";

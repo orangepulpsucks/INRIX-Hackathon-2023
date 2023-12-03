@@ -22,10 +22,12 @@ function App() {
             <Locations />
           </div>
 
-          <div class="my-4 border border-slate-200"></div>
+          <div className="my-4 border border-slate-200"></div>
 
           <div>
+            <h1 className="text-left text-base font-semibold">When? 📅</h1>
             <RangeCalendar />
+            <WeatherCard />
           </div>
         </div>
         <div>

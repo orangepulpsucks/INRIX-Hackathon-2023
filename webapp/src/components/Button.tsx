@@ -12,10 +12,8 @@ export function Button(props) {
       {...mergeProps(buttonProps, focusProps)}
       ref={ref}
       className={`rounded-full p-2 ${props.isDisabled ? "text-gray-400" : ""} ${
-        !props.isDisabled ? "hover:bg-violet-100 active:bg-violet-200" : ""
-      } outline-none ${
-        isFocusVisible ? "ring-2 ring-purple-600 ring-offset-2" : ""
-      }`}
+        !props.isDisabled ? "hover:bg-transparent active:bg-transparent" : ""
+      } outline-none ${isFocusVisible ? "none" : ""}`}
     >
       {props.children}
     </button>
