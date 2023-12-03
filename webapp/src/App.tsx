@@ -41,7 +41,7 @@ function App() {
             </h1>
 
             <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">
-              + add a location
+              display on map
             </button>
           </div>
 
