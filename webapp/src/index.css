@@ -1,12 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+
 @font-face {
-  font-family: "Roboto"; 
-  src: local("Roboto"),
+  font-family: "Roboto";
+  src:
+    local("Roboto"),
     url("./assets/fonts/roboto.woff2") format("woff2");
-} */
+}
 
 :root {
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
@@ -64,6 +65,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.divider {
+  border-bottom: 1px solid;
 }
 
 @media (prefers-color-scheme: light) {
