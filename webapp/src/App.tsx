@@ -21,7 +21,7 @@ function App() {
 
           <div className="my-4 border border-slate-200"></div>
 
-          <h1 className="mb-6 mt-4 text-left text-2xl text-base font-semibold">
+          <h1 className="mb-6 mt-4 text-left text-2xl font-semibold">
             Pick a date 📅
           </h1>
 
