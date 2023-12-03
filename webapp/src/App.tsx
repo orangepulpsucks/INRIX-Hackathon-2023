@@ -24,12 +24,9 @@ function App() {
             <Locations />
           </div>
         </div>
-
-        <div class="bg-slate-100"></div>
-      </div>
-
-      <div>
-        <Mapbox />
+        <div>
+          <Mapbox />
+        </div>
       </div>
     </>
   );
