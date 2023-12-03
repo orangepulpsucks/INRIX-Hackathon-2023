@@ -57,10 +57,7 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
         <div className="mt-2 rounded-lg border border-gray-200 p-5 dark:border-gray-700 dark:bg-gray-900">
           <div className="flex w-full">
             <p className="mb-2 w-3/5 pr-6  text-gray-500 dark:text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              orci massa, tempor vel lorem sed, condimentum hendrerit odio. In
-              suscipit at ante nec pharetra. Aliquam in elit ipsum. Vivamus
-              vitae.
+              {desc}
             </p>
             <img src={img} className="h-auto w-2/5 rounded-lg" />
           </div>
