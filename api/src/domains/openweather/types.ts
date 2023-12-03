@@ -1,4 +1,3 @@
-const CITIES = {
+export const CITY_CODES = {
   SAN_FRANCISO: 1,
-  FRANKFURT: 2,
 } as const;
