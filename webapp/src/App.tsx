@@ -12,7 +12,7 @@ import logo from "./assets/bat.svg";
 function App() {
   return (
     <>
-      <div className="flex h-screen w-screen overflow-hidden">
+      <div className="fade-in flex h-screen w-screen overflow-hidden">
         <div className="no-scrollbar w-5/12 overflow-y-auto px-16 py-14 text-left">
           <img
             src={logo}
