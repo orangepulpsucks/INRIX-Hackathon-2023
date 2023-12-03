@@ -1,11 +1,16 @@
 import "flowbite";
+import React, { useEffect, useState } from "react";
 
 interface CCProps {
-  id: number;
+  id: string;
+  name: string;
+  stars: number;
+  desc: string;
+  img: string;
   expanded: boolean;
 }
 
-function CompanyCard({ id, expanded }: CCProps) {
+function CompanyCard({ id, name, stars, desc, img, expanded }: CCProps) {
   return (
     <div
       id={`accordion-collapse-${id}`}
@@ -20,7 +25,7 @@ function CompanyCard({ id, expanded }: CCProps) {
           aria-expanded={expanded}
           aria-controls={`accordion-collapse-body-${id}`}
         >
-          <p className="px-2">Restaurant</p>
+          <p className="px-2">{name}</p>
           <div className="flex items-center ">
             <p className="px-4">⭐⭐⭐⭐⭐</p>
             <svg
@@ -55,10 +60,7 @@ function CompanyCard({ id, expanded }: CCProps) {
               suscipit at ante nec pharetra. Aliquam in elit ipsum. Vivamus
               vitae.
             </p>
-            <img
-              src="https://picsum.photos/200/300"
-              className="h-auto w-2/5 rounded-lg"
-            />
+            <img src={img} className="h-auto w-2/5 rounded-lg" />
           </div>
           <div className="my-4 border border-slate-200"></div>
           <div className="flex items-baseline justify-between">
