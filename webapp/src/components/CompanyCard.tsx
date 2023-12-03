@@ -1,20 +1,24 @@
 import "flowbite";
 
 interface CCProps {
-  added: boolean;
   id: number;
+  expanded: boolean;
 }
 
-function CompanyCard() {
+function CompanyCard({ id, expanded }: CCProps) {
   return (
-    <div id="accordion-collapse" data-accordion="collapse" class="mb-4">
-      <h2 id="accordion-collapse-heading-1">
+    <div
+      id={`accordion-collapse-${id}`}
+      data-accordion="collapse"
+      className="mb-4"
+    >
+      <h2 id={`accordion-collapse-heading-${id}`}>
         <button
           type="button"
           className="font-base flex w-full items-center justify-between gap-3 rounded-t-xl border  border-gray-200 p-3 text-gray-500  focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
-          data-accordion-target= '#accordion-collapse-body-${id}`
-          aria-expanded="true"
-          aria-controls="accordion-collapse-body-1"
+          data-accordion-target={`#accordion-collapse-body-${id}`}
+          aria-expanded={expanded}
+          aria-controls={`accordion-collapse-body-${id}`}
         >
           <p className="px-2">Resturant</p>
           <div className="flex items-center ">
@@ -39,9 +43,9 @@ function CompanyCard() {
         </button>
       </h2>
       <div
-        id="accordion-collapse-body-1"
+        id={`accordion-collapse-body-${id}`}
         className="hidden"
-        aria-labelledby="accordion-collapse-heading-1"
+        aria-labelledby={`accordion-collapse-heading-${id}`}
       >
         <div className="mt-2 rounded-lg border border-gray-200 p-5 dark:border-gray-700 dark:bg-gray-900">
           <div className="flex w-full">
@@ -53,12 +57,12 @@ function CompanyCard() {
             </p>
             <img
               src="https://picsum.photos/200/300"
-              class="h-auto w-2/5 rounded-lg"
+              className="h-auto w-2/5 rounded-lg"
             />
           </div>
           <div className="my-4 border border-slate-200"></div>
           <div className="flex items-baseline justify-between">
-            <button class="inline-flex w-fit justify-center gap-x-1.5 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            <button className="inline-flex w-fit justify-center gap-x-1.5 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
               Add
             </button>
             <p className="text-gray-500 dark:text-gray-400">

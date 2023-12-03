@@ -30,7 +30,6 @@ function App() {
 
           <div className="flex justify-between">
             <RangeCalendar />
-
             <WeatherCard />
           </div>
 
@@ -46,11 +45,11 @@ function App() {
             </button>
           </div>
 
-          <CompanyCard />
-          <CompanyCard />
-          <CompanyCard />
-          <CompanyCard />
-          <CompanyCard />
+          <CompanyCard id={1} expanded={true} />
+          <CompanyCard id={2} expanded={false} />
+          <CompanyCard id={3} expanded={false} />
+          <CompanyCard id={4} expanded={false} />
+          <CompanyCard id={5} expanded={false} />
         </div>
         <div className="relative w-7/12">
           <Mapbox />

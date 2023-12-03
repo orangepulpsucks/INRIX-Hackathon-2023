@@ -347,3 +347,5 @@ $RECYCLE.BIN/
 *.env
 .env
 !.template.env
+
+/package.json
