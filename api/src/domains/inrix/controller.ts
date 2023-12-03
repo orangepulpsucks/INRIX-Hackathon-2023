@@ -1,6 +1,3 @@
-
-  
-//   
 import generateHash from "../../util/generateHash";
 
 export async function inrixapi() {
