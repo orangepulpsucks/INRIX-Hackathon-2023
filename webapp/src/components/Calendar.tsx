@@ -23,7 +23,7 @@ export function Calendar(props) {
   );
 
   return (
-    <div {...calendarProps} ref={ref} className="inline-block text-gray-800">
+    <div {...calendarProps} ref={ref} className="inline-block">
       <CalendarHeader
         state={state}
         calendarProps={calendarProps}

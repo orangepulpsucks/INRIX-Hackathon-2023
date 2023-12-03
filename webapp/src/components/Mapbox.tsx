@@ -24,7 +24,7 @@ const Mapbox: React.FC = () => {
   }, []); // Empty dependency array means this effect runs once after the initial render
 
   return (
-    <div ref={mapContainerRef} style={{ width: "100%", height: "400px" }} />
+    <div ref={mapContainerRef} style={{ width: "100%", height: "100vh" }} />
   );
 };
 

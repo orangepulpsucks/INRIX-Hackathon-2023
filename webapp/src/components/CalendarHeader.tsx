@@ -21,15 +21,15 @@ export function CalendarHeader({
         <h2>{calendarProps["aria-label"]}</h2>
       </VisuallyHidden>
       <Button {...prevButtonProps}>
-        <ChevronLeftIcon className="h-6 w-6" />
+        <ChevronLeftIcon className="h-4 w-4" />
       </Button>
-      <h2 aria-hidden className="align-center flex-1 text-center text-xl">
+      <h2 aria-hidden className="align-center flex-1 text-center text-base">
         {monthDateFormatter.format(
           state.visibleRange.start.toDate(state.timeZone),
         )}
       </h2>
       <Button {...nextButtonProps}>
-        <ChevronRightIcon className="h-6 w-6" />
+        <ChevronRightIcon className="h-4 w-4" />
       </Button>
     </div>
   );
