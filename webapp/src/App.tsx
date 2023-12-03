@@ -8,12 +8,16 @@ import CompanyCard from "./components/CompanyCard";
 import fileContent from "./assets/poi.json";
 import { GenerateItinerary } from "./components/GenerateItinerary";
 import logo from "./assets/bat.svg";
+import { VisibleContext } from "./contexts/VisibleContext";
+import { useContext } from "react";
 
 function App() {
+  const { visible, setVisible } = useContext(VisibleContext);
+
   return (
     <>
       <div className="fade-in flex h-screen w-screen overflow-hidden">
-        <div className="no-scrollbar w-5/12 overflow-y-auto px-16 py-14 text-left">
+        <div className="no-scrollbar w-5/12 overflow-y-auto px-16 py-14 text-left shadow-lg">
           <img
             src={logo}
             width={128}
@@ -41,7 +45,10 @@ function App() {
             <h1 className="text-left text-2xl font-semibold">
               What's the plan? 👀
             </h1>
-            <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">
+            <button
+              onClick={() => setVisible(!visible)}
+              className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400"
+            >
               display on map 📌
             </button>
           </div>
@@ -66,9 +73,7 @@ function App() {
           <GenerateItinerary />
         </div>
         <div className="relative w-7/12">
-          {/* <visContextProvider> */}
           <Mapbox />
-          {/* </visContextProvider> */}
         </div>
       </div>
     </>

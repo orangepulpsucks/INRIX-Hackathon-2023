@@ -65,7 +65,6 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
           <div className="flex items-baseline justify-between">
             <button
               onClick={() => {
-                console.log("fuck you!");
                 setAdd(!add);
               }}
               className={`${

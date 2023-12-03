@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { VisibleContext } from "../contexts/VisibleContext";
+
 function Locations() {
+  const { visibleRoute, setVisibleRoute } = useContext(VisibleContext);
   return (
     <div className="flex-row justify-end">
       <p className="my-2 text-left text-xl text-slate-400 ">Hello! 👋</p>
@@ -63,6 +67,7 @@ function Locations() {
             Show Route
           </label>
           <input
+            onClick={() => setVisibleRoute(!visibleRoute)}
             className=""
             type="checkbox"
             id="show-route"
