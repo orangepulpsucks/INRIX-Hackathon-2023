@@ -1,21 +1,14 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import tailwindLogo from "/tailwind.svg";
 import "./App.css";
-import Tether from "./components/Tether";
 import "mapbox-gl/dist/mapbox-gl.css";
 import Locations from "./components/Locations";
 import Mapbox from "./components/Mapbox";
 import RangeCalendar from "./components/RangeCalendar";
 import WeatherCard from "./components/WeatherCard";
 import CompanyCard from "./components/CompanyCard";
-import fileContent from "./assets/yelpConv.json";
-// import visContextProvider from "./contexts/Context";
+import fileContent from "./assets/poi.json";
+import { GenerateItinerary } from "./components/GenerateItinerary";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <div className="flex h-screen w-screen overflow-hidden">
@@ -62,6 +55,8 @@ function App() {
               );
             })
             .slice(0, 5)}
+
+          <GenerateItinerary />
         </div>
         <div className="relative w-7/12">
           {/* <visContextProvider> */}

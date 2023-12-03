@@ -1,3 +1,9 @@
+![gitlogo](https://github.com/orangepulpsucks/INRIX-Hackathon-2023/assets/42681894/9a657e72-26dd-4117-9fcf-54d5fe30c6e7)
+# Wanderus
+Brought to you by the BitBats is Wanderus. Let us craft your perfect day by analyzing what's around you. Embrace spontaneity, discover local gems, and make the most out of every moment with Wanderus!
+
+This is our official submission for the INRIX Hackathon 2023.
+
 # React-Express Boilerplate
 
 ## Description
