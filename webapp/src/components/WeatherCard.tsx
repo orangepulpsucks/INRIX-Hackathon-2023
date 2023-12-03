@@ -1,9 +1,33 @@
+import { useState, useEffect } from "react";
+
 interface WeatherCardProps {
   temp: number;
   url: string;
 }
 
-function WeatherCard({ temp, url }: WeatherCardProps) {
+function WeatherCard() {
+  const [temp, setTemp] = useState(100);
+  const [url, setUrl] = useState(
+    "https://openweathermap.org/img/wn/10d@2x.png",
+  );
+
+  useEffect(() => {
+    const getWeather = async () => {
+      try {
+        const response = await fetch("/api/weather/forecast");
+        if (response.ok) {
+          const { temp, url } = await response.json();
+          setTemp(temp);
+          setUrl(url);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    getWeather();
+  }, []);
+
   const lastSlashIndex = url.lastIndexOf("/");
   const substring = url.substring(lastSlashIndex + 1);
   const dAtIndex = substring.indexOf("d@");
@@ -27,7 +51,7 @@ function WeatherCard({ temp, url }: WeatherCardProps) {
     >
       <div className="m-6 flex-row">
         <p className="px-2 text-xl">{temp}°F</p>
-        <p className="px-2 text-sm">Seattle, WA</p>
+        <p className="px-2 text-sm">San Francisco, WA</p>
       </div>
       <img src={url} />
     </div>

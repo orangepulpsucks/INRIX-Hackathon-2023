@@ -30,10 +30,7 @@ function App() {
           <div className="flex justify-between">
             <RangeCalendar />
 
-            <WeatherCard
-              temp="78"
-              url="https://openweathermap.org/img/wn/10d@2x.png"
-            />
+            <WeatherCard />
           </div>
 
           <div className="my-4 border border-slate-200"></div>
