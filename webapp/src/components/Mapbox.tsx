@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import { Feature, LineString } from "geojson";
+// import { visibleContext } from "./contexts/Context";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiY2hyaXNob2xsYW5kYWlzZSIsImEiOiJjbHBwMzh4N3AwdGoyMmpvdjJlejBpZXRyIn0.a4uwm9INFCWfL3lbmVH-bg";
@@ -13,7 +14,7 @@ const Mapbox: React.FC = () => {
       container: mapContainerRef.current!,
       style: "mapbox://styles/mapbox/streets-v11",
       center: [-122.41023486259604, 37.79524589212828],
-      zoom: 14.7,
+      zoom: 14.3,
     });
 
     /************************* INRIX API - WORKING ***************************/
@@ -83,6 +84,8 @@ const Mapbox: React.FC = () => {
     /****************************************************************/
 
     // fake map code
+
+    // static contextType = visibleContext;
 
     // // Fog Harbor
     var marker = new mapboxgl.Marker()

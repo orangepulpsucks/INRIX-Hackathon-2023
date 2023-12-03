@@ -22,7 +22,7 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
       <h2 id={`accordion-collapse-heading-${id}`}>
         <button
           type="button"
-          className="font-base flex w-full items-center justify-between gap-3 rounded-t-xl border  border-gray-200 p-3 text-gray-500  focus:ring-gray-200 rtl:text-right dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-800"
+          className="font-base flex w-full items-center justify-between gap-3 rounded-lg border  border-gray-200 p-3 text-gray-500  focus:ring-gray-200 rtl:text-right"
           data-accordion-target={`#accordion-collapse-body-${id}`}
           aria-expanded={expanded}
           aria-controls={`accordion-collapse-body-${id}`}
@@ -54,11 +54,9 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
         className="hidden"
         aria-labelledby={`accordion-collapse-heading-${id}`}
       >
-        <div className="mt-2 rounded-lg border border-gray-200 p-5 dark:border-gray-700 dark:bg-gray-900">
+        <div className="mt-2 rounded-lg border border-gray-200 p-5 ">
           <div className="flex w-full">
-            <p className="mb-2 w-3/5 pr-6  text-gray-500 dark:text-gray-400">
-              {desc}
-            </p>
+            <p className="mb-2 w-3/5 pr-6  text-gray-500 ">{desc}</p>
             <img src={img} className="h-auto w-2/5 rounded-lg" />
           </div>
           <div className="my-4 border border-slate-200"></div>
@@ -66,7 +64,7 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
             <button className="inline-flex w-fit justify-center gap-x-1.5 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
               Add
             </button>
-            <p className="text-gray-500 dark:text-gray-400">
+            <p className="text-gray-500 ">
               <a target="_blank" href={url}>
                 External Link 🔗
               </a>

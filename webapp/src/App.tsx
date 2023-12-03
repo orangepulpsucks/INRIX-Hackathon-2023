@@ -11,6 +11,7 @@ import RangeCalendar from "./components/RangeCalendar";
 import WeatherCard from "./components/WeatherCard";
 import CompanyCard from "./components/CompanyCard";
 import fileContent from "./assets/yelpConv.json";
+// import visContextProvider from "./contexts/Context";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,7 +41,6 @@ function App() {
             <h1 className="text-left text-base font-semibold">
               What's the plan? 👀
             </h1>
-
             <button className="m-0 border-0 border-transparent bg-transparent p-0 text-right text-sm font-bold uppercase  text-slate-400">
               display on map 📌
             </button>
@@ -64,7 +64,9 @@ function App() {
             .slice(0, 5)}
         </div>
         <div className="relative w-7/12">
+          {/* <visContextProvider> */}
           <Mapbox />
+          {/* </visContextProvider> */}
         </div>
       </div>
     </>
