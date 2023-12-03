@@ -2,7 +2,7 @@
 # Wanderus
 Brought to you by the BitBats is Wanderus. Let us craft your perfect day by analyzing what's around you. Embrace spontaneity, discover local gems, and make the most out of every moment with Wanderus!
 
-This is our official submission for the INRIX Hackathon 2023.
+This is our official [Devpost](https://devpost.com/software/bitbats-inrix-maps) submission for the INRIX Hackathon 2023.
 
 # React-Express Boilerplate
 
