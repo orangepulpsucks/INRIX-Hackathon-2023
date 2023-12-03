@@ -33,6 +33,7 @@ function WeatherCard() {
   const dAtIndex = substring.indexOf("d@");
   const weather = substring.substring(0, dAtIndex);
   let dynWeatherColor = "to-stone-200";
+  let tempFaren = Math.round(temp * (9 / 5) - 459.67);
 
   if (weather == "01" || weather == "02") {
     dynWeatherColor = "to-amber-200";
@@ -50,7 +51,7 @@ function WeatherCard() {
       className={`inline-block flex h-fit w-1/2 justify-between rounded-lg border border-gray-300 bg-gradient-to-r from-stone-50 first-letter:items-center ${dynWeatherColor}`}
     >
       <div className="m-6 flex-row">
-        <p className="px-2 text-xl">{temp}°F</p>
+        <p className="px-2 text-xl">{tempFaren}°F</p>
         <p className="px-2 text-sm">San Francisco, WA</p>
       </div>
       <img src={url} />
