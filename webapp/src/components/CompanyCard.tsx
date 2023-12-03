@@ -12,6 +12,8 @@ interface CCProps {
 }
 
 function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
+  const [add, setAdd] = useState(false);
+
   let path = `./public/images/yelp-stars/regular_${stars}.png`;
   return (
     <div
@@ -61,7 +63,17 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
           </div>
           <div className="my-4 border border-slate-200"></div>
           <div className="flex items-baseline justify-between">
-            <button className="inline-flex w-fit justify-center gap-x-1.5 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+            <button
+              onClick={() => {
+                console.log("fuck you!");
+                setAdd(!add);
+              }}
+              className={`${
+                add
+                  ? "bg-blue-500 text-white hover:bg-blue-600"
+                  : "bg-white hover:bg-gray-50"
+              } inline-flex w-fit justify-center gap-x-1.5 rounded-lg px-4 py-3 text-sm font-semibold text-gray-600 shadow-sm ring-1 ring-inset ring-gray-300 `}
+            >
               Add
             </button>
             <p className="text-gray-500 ">
