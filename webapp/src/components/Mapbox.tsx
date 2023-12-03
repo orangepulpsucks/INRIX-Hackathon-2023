@@ -40,6 +40,45 @@ const Mapbox: React.FC = () => {
       .setLngLat([-122.399661, 37.796996])
       .addTo(map);
 
+    var geojson = {
+      type: "FeatureCollection",
+      features: [
+        {
+          type: "Feature",
+          properties: {},
+          geometry: {
+            coordinates: [
+              [-122.41580962523275, 37.782433947124346],
+              [-122.41850156234553, 37.79630265687568],
+              [-122.4103222149648, 37.797407132462666],
+              [-122.41089166320018, 37.8009249816739],
+              [-122.41694852170355, 37.80513799919643],
+              [-122.41751796993896, 37.80808287843996],
+              [-122.41265177592759, 37.80849188015806],
+            ],
+            type: "LineString",
+          },
+        },
+      ],
+    };
+    map.on("load", function () {
+      map.addLayer({
+        id: "line",
+        type: "line",
+        source: {
+          type: "geojson",
+          data: geojson,
+        },
+        layout: {
+          "line-join": "round",
+          "line-cap": "round",
+        },
+        paint: {
+          "line-color": "#7e5bef",
+          "line-width": 5,
+        },
+      });
+    });
     // Add any additional customization or features here
 
     // Cleanup the map when the component is unmounted
