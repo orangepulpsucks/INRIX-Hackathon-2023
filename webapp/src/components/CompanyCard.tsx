@@ -12,6 +12,7 @@ interface CCProps {
 }
 
 function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
+  let path = `./public/images/yelp-stars/regular_${stars}.png`;
   return (
     <div
       id={`accordion-collapse-${id}`}
@@ -28,7 +29,7 @@ function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
         >
           <p className="px-2">{name}</p>
           <div className="flex items-center ">
-            <p className="px-4">⭐⭐⭐⭐⭐</p>
+            <img className="px-2" src={path}></img>
             <svg
               data-accordion-icon
               className="mr-2 h-3 w-3 shrink-0 rotate-180"
