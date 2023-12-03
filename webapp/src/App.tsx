@@ -4,11 +4,9 @@ import viteLogo from "/vite.svg";
 import tailwindLogo from "/tailwind.svg";
 import "./App.css";
 import Tether from "./components/Tether";
-<<<<<<< HEAD
 import "mapbox-gl/dist/mapbox-gl.css";
-=======
 import Locations from "./components/Locations";
->>>>>>> origin/main
+import Mapbox from "./components/Mapbox";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -38,7 +36,7 @@ function App() {
           />
         </a>
       </div>
-      <h1>Vite + React + Tailwind</h1>
+      <h1>Itinero</h1>
       <div className="p-[2em]">
         <button className="mb-5" onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -48,11 +46,13 @@ function App() {
         </p>
       </div>
       <Tether className="mb-5" />
-      <p className="text-zinc-500">
-        Click on the Vite, React, and Tailwind logos to learn more
-      </p>
+
       <div>
         <Locations />
+      </div>
+
+      <div>
+        <Mapbox />
       </div>
     </>
   );
