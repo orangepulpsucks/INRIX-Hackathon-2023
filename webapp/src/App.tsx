@@ -55,7 +55,9 @@ function App() {
                   key={item.id}
                   name={item.name}
                   stars={item.rating}
-                  desc="LOREM IPSUM"
+                  desc={item.description}
+                  img={item.image_url}
+                  url={item.url}
                   id={item.id}
                   expanded={false}
                 />

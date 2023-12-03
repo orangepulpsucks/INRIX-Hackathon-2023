@@ -7,10 +7,11 @@ interface CCProps {
   stars: number;
   desc: string;
   img: string;
+  url: string;
   expanded: boolean;
 }
 
-function CompanyCard({ id, name, stars, desc, img, expanded }: CCProps) {
+function CompanyCard({ id, name, stars, desc, img, expanded, url }: CCProps) {
   return (
     <div
       id={`accordion-collapse-${id}`}
@@ -68,7 +69,7 @@ function CompanyCard({ id, name, stars, desc, img, expanded }: CCProps) {
               Add
             </button>
             <p className="text-gray-500 dark:text-gray-400">
-              <a target="_blank" href="https://www.yelp.com/">
+              <a target="_blank" href={url}>
                 External Link 🔗
               </a>
             </p>
