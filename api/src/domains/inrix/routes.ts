@@ -1,5 +1,4 @@
 import express, { Request, Response } from "express";
-import { getMessage } from "./controller";
 import { inrixapi } from "./controller";
 const router = express.Router();
 

@@ -1,3 +1,9 @@
-export const CITY_CODES = {
-  SAN_FRANCISO: 1,
-} as const;
+export type LatLong = {
+  lat: number;
+  long: number;
+};
+
+export type WeatherResponse = {
+  url: string;
+  temp: number;
+};
