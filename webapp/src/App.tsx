@@ -25,15 +25,22 @@ function App() {
 
           <div className="my-4 border border-slate-200"></div>
 
-          <h1 className="text-left text-base font-semibold">When? 📅</h1>
+          <h1 className="text-left text-base font-semibold">Pick a date 📅</h1>
 
           <div className="flex justify-between">
             <RangeCalendar />
+
             <WeatherCard
               temp="78"
               url="https://openweathermap.org/img/wn/10d@2x.png"
             />
           </div>
+
+          <div className="my-4 border border-slate-200"></div>
+
+          <h1 className="text-left text-base font-semibold">
+            What do you want to see? 👀
+          </h1>
         </div>
         <div>
           <Mapbox />
