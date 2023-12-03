@@ -28,35 +28,13 @@ function Locations() {
               San Frankfurt
             </option>
           </select>
-          <p className="m-2">To</p>
-          <select
-            name="city"
-            className="m-2 rounded-lg bg-slate-50 p-2 drop-shadow-md"
-          >
-            <option value="san-francisco" disabled>
-              San Francisco
-            </option>
-            <option value="frankfurt">Frankfurt</option>
-            <option value="seattle" disabled>
-              Seattle
-            </option>
-            <option value="portland" disabled>
-              Portland
-            </option>
-            <option value="new-york" disabled>
-              New York
-            </option>
-            <option value="san-frankfurt" disabled>
-              San Frankfurt
-            </option>
-          </select>
         </section>
         <div className=" flex items-center">
           <label htmlFor="show-route" className="block p-2">
             Show Route
           </label>
           <input
-            className="border-red-500"
+            className=""
             type="checkbox"
             id="show-route"
             name="show-route"
