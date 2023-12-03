@@ -28,7 +28,7 @@ function Locations() {
               San Frankfurt
             </option>
           </select>
-          <p>To</p>
+          <p className="m-2">To</p>
           <select
             name="city"
             className="m-2 rounded-lg bg-slate-50 p-2 drop-shadow-md"
@@ -56,7 +56,7 @@ function Locations() {
             Show Route
           </label>
           <input
-            className="bg-slate-50"
+            className="border-red-500"
             type="checkbox"
             id="show-route"
             name="show-route"
